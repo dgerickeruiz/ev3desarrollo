@@ -23,4 +23,27 @@ class DataBase {
         return null;
     }
     
+    public function listarTodos($sql){
+
+        if ($this->sentencia->prepare($sql)) {
+
+            /* ejecutar la consulta */
+            $lista = $this->db->query($sql);
+
+            /* vincular las variables de resultados */
+
+            /* obtener el valor */
+            return $lista->fetch_all(MYSQLI_ASSOC);
+
+            /* cerrar la sentencia */
+            $this->sentencia->close();
+        }
+
+        /* cerrar la conexión */
+        $this->db->close();
+
+        return null;
+    }
+
+    
 }
