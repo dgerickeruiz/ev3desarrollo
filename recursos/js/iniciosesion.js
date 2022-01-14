@@ -28,7 +28,7 @@ $(document).ready(function () {
 					let mensaje = json['mensaje'];
 					alert(mensaje);
 					setTimeout(function () {
-						window.location.replace('?vistas=r');
+						window.location.replace('vistas/principal.php');
 					}, 200);
 				} else {
 					let mensaje = json['mensaje'];

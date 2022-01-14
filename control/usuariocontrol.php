@@ -29,7 +29,8 @@ switch ($do) {
                         "auth" => true,
                         "cliente" => $resultado["clienteRut"],
                         "nombre" => $resultado["clienteNombre"],
-                        "monto" => $resultado["clienteMonto"]
+                        "monto" => $resultado["clienteMonto"],
+                        "tipo" => $tipoUsuario
                     );
 
                     $r["resp"] = true;
