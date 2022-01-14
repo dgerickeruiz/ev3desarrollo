@@ -21,7 +21,7 @@
         <div id="navbarBasicExample" class="navbar-menu">
 
             <div class="navbar-start">
-                <a class="navbar-item" href="principal.php?mod=r">
+                <a class="navbar-item" href="principal.php?mod=main">
                     Inicio
                 </a>
                 <a class="navbar-item" href="principal.php?mod=reg">
@@ -63,15 +63,18 @@
         $modulo = (isset($_GET['mod'])) ? $_GET['mod'] : "";
 
         switch ($modulo) {
+            case 'main':
+                require_once('principal.php');
+                break;
             case 'reg':
                 require_once('registrar.php');
                 break;
             case 'man':
                 require_once('mantencion.php');
                 break;
-            case 'reg':
-                require_once('mantencion.php');
-                break;
+                // case 'reg':
+                //     require_once('mantencion.php');
+                //     break;
             case 'repG':
                 require_once('reportesGiros.php');
                 break;
