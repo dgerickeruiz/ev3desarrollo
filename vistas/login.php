@@ -54,11 +54,11 @@
                     <div class="field">
                         <div class="control">
                             <label class="radio">
-                                <input type="radio" name="usuario" value="2" checked>
+                                <input type="radio" name="tipoUsuario" value="1" id="radio1" checked>
                                 Cliente
                             </label>
                             <label class="radio">
-                                <input type="radio" value="1" name="usuario">
+                                <input type="radio" value="2" name="tipoUsuario" id="radio2">
                                 Tecnico
                             </label>
                         </div>
