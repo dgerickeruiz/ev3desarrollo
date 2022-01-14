@@ -21,7 +21,7 @@
         <div id="navbarBasicExample" class="navbar-menu">
 
             <div class="navbar-start">
-                <a class="navbar-item" href="">
+                <a class="navbar-item" href="principal.php?mod=r">
                     Inicio
                 </a>
                 <a class="navbar-item" href="principal.php?mod=reg">

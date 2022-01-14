@@ -18,7 +18,7 @@
 
     <!-- Recursos basicos para funcionar-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="recursos/js/iniciosesion.js"></script>
+    <script src="recursos/js/inicioSesion.js"></script>
 
     <title>Desarrollo web 2021</title>
 </head>

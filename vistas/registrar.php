@@ -60,7 +60,7 @@
 
             <div class="field is-horizontal is-grouped">
                 <div class="control">
-                    <button class="button is-primary" id="buttonG">Aceptar</button>
+                    <button id="submitGiro" class="button is-primary" id="buttonG">Aceptar</button>
                 </div>
             </div>
         </div>
