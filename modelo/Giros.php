@@ -26,5 +26,11 @@ class Giros{
       $resul = $this->db->listarTodos($sql);
       return $resul;
     }
+    public function registrarGiros(){
+      $sql = "INSERT INTO giros(codigo, generoId, categoriaId, album, autor, precio, discografica, urlSpotify, habilitado)
+              VALUES(".$this->codigo.", ".$this->generoId.", ".$this->categoriaId.", '".$this->album."', '".$this->autor."', ".$this->precio.", '".$this->discografica."', '".$this->urlSpotify."', 1)";
+      $resul = $this->db->ejecutar($sql);
+      return $resul;
+    }
 }
 ?>

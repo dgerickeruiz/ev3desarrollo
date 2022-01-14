@@ -22,7 +22,7 @@ class DataBase {
         $this->db->close();
         return null;
     }
-    
+
     public function listarTodos($sql){
 
         if ($this->sentencia->prepare($sql)) {
@@ -45,5 +45,14 @@ class DataBase {
         return null;
     }
 
-    
+    public function ejecutar($sql){
+       
+        /* ejecutar la consulta */
+        $resul = $this->db->query($sql);           
+        
+        /* cerrar la conexión */
+        $this->db->close();
+
+        return $resul;
+    }
 }
