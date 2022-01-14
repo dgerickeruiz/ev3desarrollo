@@ -30,7 +30,7 @@ switch ($do) {
                         "cliente" => $resultado["clienteRut"],
                         "nombre" => $resultado["clienteNombre"],
                         "monto" => $resultado["clienteMonto"],
-                        "tipo" => $tipoUsuario
+                        "tipoUsuario" => $tipoUsuario
                     );
 
                     $r["resp"] = true;
@@ -53,6 +53,7 @@ switch ($do) {
                         "auth" => true,
                         "tecnico" => $resultado["tecnicoRut"],
                         "nombre" => $resultado["tecnicoNombre"],
+                        "tipoUsuario" => $tipoUsuario,
                         "tipo" => $resultado["tecnicoTipo"]
                     );
 

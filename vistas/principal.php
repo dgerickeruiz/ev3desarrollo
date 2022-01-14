@@ -30,7 +30,7 @@
                 <section>
                     <?php
                     $user = $_SESSION['user'];
-                    if ($user["tipo"] == 2) {
+                    if ($user["tipoUsuario"] == 2) {
                         require_once('tecnico-section.php');
                     }
                     ?>
